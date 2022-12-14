@@ -28,8 +28,18 @@ class HomeFragment : Fragment() {
         taskViewModel = ViewModelProvider(this)[TaskViewModel::class.java]
         taskViewModel.readAllData.observe(viewLifecycleOwner){task->
             adapter_task.setData(task)
+            emptyData(task.size)
         }
 
         return view
+    }
+    private fun emptyData(sizeData:Int){
+        if(sizeData==0){
+            binding.empty.visibility = View.VISIBLE
+            binding.recyleTugas.visibility = View.GONE
+        }else{
+            binding.empty.visibility = View.GONE
+            binding.recyleTugas.visibility = View.VISIBLE
+        }
     }
 }
