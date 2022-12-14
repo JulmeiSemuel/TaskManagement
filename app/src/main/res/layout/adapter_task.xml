@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="4dp"
+    android:elevation="10dp"
+    app:cardElevation="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/judul_tugas"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Judul Tugas"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/deskripsi_tugas"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="Deskripsi Tugas"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/kategori_tugas"
+            android:textSize="17dp"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/black"
+            android:text="Kategori Tugas"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
